@@ -1,0 +1,522 @@
+\hypertarget{namespace_utilities}{}\doxysection{Utilities Namespace Reference}
+\label{namespace_utilities}\index{Utilities@{Utilities}}
+
+
+Namespace with helper functions.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespace_utilities_a5ea1c1383f055be5b1f058573c49bcb7}{check\+If\+Int}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em checks if a string is an integer \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_utilities_abda6a33164dc12bd4a3a4b8c44ff320d}{check\+If\+Double}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em checks if a string is a double \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_utilities_a4dcfe0f6fe715f5099332703eef78701}{check\+If\+String}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em checks if a string is a string \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_utilities_a36fb29b7c49d79fa75efbbe2c99e3dd9}{check\+If\+Formula}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em checks if a string is a formula \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_utilities_a13d96e3aea4653d1115a3c15788e9bda}{check\+If\+Has\+Sign}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em checks if a string is a number and has sign \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_utilities_a1bc45c619a47e6b45d54938bff3b80dc}{check\+If\+Operation}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em checks if a string is an operation \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_utilities_a50e8dcecd226f5d9ad68837044046d7e}{check\+If\+Arguments}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em checks if a string is a valid argument for cell value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_utilities_a659aed2650e0a3d20b921d0059adaecb}{remove\+Spaces\+Front}} (string \&string)
+\begin{DoxyCompactList}\small\item\em remove spaces before the first symbol of a string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_utilities_a8519adc7eeeed61c8186b5b27a46b967}{remove\+Spaces\+In}} (string \&string)
+\begin{DoxyCompactList}\small\item\em remove spaces in a string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_utilities_a711292517b75e7113c6dd1fca39757b4}{remove\+Spaces\+Back}} (string \&string)
+\begin{DoxyCompactList}\small\item\em remove spaces after the last symbol of a string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_utilities_a570f6f9ccc39e073720611a8d719dded}{remove\+Spaces}} (string \&string)
+\begin{DoxyCompactList}\small\item\em remove all spaces of a string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_utilities_a8d5d6ce342c012be576aa78971a4241c}{reduce\+Spaces}} (string \&str)
+\begin{DoxyCompactList}\small\item\em reduce spaces of a string to one \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_utilities_aff80c479a64a3e10a5f5a3dba6332d28}{is\+Char\+Operation}} (char c)
+\begin{DoxyCompactList}\small\item\em checks if a character is an operation \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_utilities_aacfdbd5d78b8cf836a1f6e73d8497340}{is\+Cell}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em checks if a string is a cell \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_utilities_adca54207e48a706ae1d22d552ef6905f}{is\+String\+Spaces\+Only}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em checks if a string contains only spaces \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{namespace_utilities_a41ef81545baab900b3872fa1446fa6b0}{extract\+By}} (const string \&str, char symbol)
+\begin{DoxyCompactList}\small\item\em extract strings from a string by a given symbol \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespace_utilities_a7823780204cdad4eb0cd0063f6164b68}{to\+Upper}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em returns a copy of a string but with all caps \end{DoxyCompactList}\item 
+vector$<$ size\+\_\+t $>$ \mbox{\hyperlink{namespace_utilities_a6138839af2f1383f68d8ed67a588f361}{get\+Cell\+Coordinates}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em extract cell coordinates from a string \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{namespace_utilities_a4aea1594cf5ee68202c3244368d9d334}{get\+Arguments}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em extract arguments from a string \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespace_utilities_a9a2780c962eb5a4bc49f291d2bf080e0}{get\+Operation}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em get operation from a string \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespace_utilities_a0aaecc4511d19cb4a952a9f15b015b8c}{add\+Quoatations}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em get copy of a string with quoatations \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespace_utilities_a80d9fd3d9296843daa26c3fa4a97e1df}{remove\+Quoatations}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em get copy of a string but without quoatations \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespace_utilities_a3608303cff6f358f16d937ad81d5a420}{remove\+Slash}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em get copy from a string but without slash \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_utilities_a3baf14c28f4546ff3576245ca5fa34e1}{compare\+Double}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em compares if two doubles are equal \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_utilities_ab29d73d49363b7aa0cc2f50a49976cde}{remove\+Zeroes\+Double}} (string \&str)
+\begin{DoxyCompactList}\small\item\em removes all trailing zeroes \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{namespace_utilities_aa9cdbbabfba520e603cc4c732eb0fb07}{count\+Dots}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em counts dot in a string \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Namespace with helper functions. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_utilities_a0aaecc4511d19cb4a952a9f15b015b8c}\label{namespace_utilities_a0aaecc4511d19cb4a952a9f15b015b8c}} 
+\index{Utilities@{Utilities}!addQuoatations@{addQuoatations}}
+\index{addQuoatations@{addQuoatations}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{addQuoatations()}{addQuoatations()}}
+{\footnotesize\ttfamily string Utilities\+::add\+Quoatations (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+get copy of a string with quoatations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a50e8dcecd226f5d9ad68837044046d7e}\label{namespace_utilities_a50e8dcecd226f5d9ad68837044046d7e}} 
+\index{Utilities@{Utilities}!checkIfArguments@{checkIfArguments}}
+\index{checkIfArguments@{checkIfArguments}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{checkIfArguments()}{checkIfArguments()}}
+{\footnotesize\ttfamily bool Utilities\+::check\+If\+Arguments (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+checks if a string is a valid argument for cell value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_abda6a33164dc12bd4a3a4b8c44ff320d}\label{namespace_utilities_abda6a33164dc12bd4a3a4b8c44ff320d}} 
+\index{Utilities@{Utilities}!checkIfDouble@{checkIfDouble}}
+\index{checkIfDouble@{checkIfDouble}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{checkIfDouble()}{checkIfDouble()}}
+{\footnotesize\ttfamily bool Utilities\+::check\+If\+Double (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+checks if a string is a double 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a36fb29b7c49d79fa75efbbe2c99e3dd9}\label{namespace_utilities_a36fb29b7c49d79fa75efbbe2c99e3dd9}} 
+\index{Utilities@{Utilities}!checkIfFormula@{checkIfFormula}}
+\index{checkIfFormula@{checkIfFormula}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{checkIfFormula()}{checkIfFormula()}}
+{\footnotesize\ttfamily bool Utilities\+::check\+If\+Formula (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+checks if a string is a formula 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a13d96e3aea4653d1115a3c15788e9bda}\label{namespace_utilities_a13d96e3aea4653d1115a3c15788e9bda}} 
+\index{Utilities@{Utilities}!checkIfHasSign@{checkIfHasSign}}
+\index{checkIfHasSign@{checkIfHasSign}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{checkIfHasSign()}{checkIfHasSign()}}
+{\footnotesize\ttfamily bool Utilities\+::check\+If\+Has\+Sign (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+checks if a string is a number and has sign 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a5ea1c1383f055be5b1f058573c49bcb7}\label{namespace_utilities_a5ea1c1383f055be5b1f058573c49bcb7}} 
+\index{Utilities@{Utilities}!checkIfInt@{checkIfInt}}
+\index{checkIfInt@{checkIfInt}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{checkIfInt()}{checkIfInt()}}
+{\footnotesize\ttfamily bool Utilities\+::check\+If\+Int (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+checks if a string is an integer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a1bc45c619a47e6b45d54938bff3b80dc}\label{namespace_utilities_a1bc45c619a47e6b45d54938bff3b80dc}} 
+\index{Utilities@{Utilities}!checkIfOperation@{checkIfOperation}}
+\index{checkIfOperation@{checkIfOperation}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{checkIfOperation()}{checkIfOperation()}}
+{\footnotesize\ttfamily bool Utilities\+::check\+If\+Operation (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+checks if a string is an operation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a4dcfe0f6fe715f5099332703eef78701}\label{namespace_utilities_a4dcfe0f6fe715f5099332703eef78701}} 
+\index{Utilities@{Utilities}!checkIfString@{checkIfString}}
+\index{checkIfString@{checkIfString}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{checkIfString()}{checkIfString()}}
+{\footnotesize\ttfamily bool Utilities\+::check\+If\+String (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+checks if a string is a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a3baf14c28f4546ff3576245ca5fa34e1}\label{namespace_utilities_a3baf14c28f4546ff3576245ca5fa34e1}} 
+\index{Utilities@{Utilities}!compareDouble@{compareDouble}}
+\index{compareDouble@{compareDouble}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{compareDouble()}{compareDouble()}}
+{\footnotesize\ttfamily bool Utilities\+::compare\+Double (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+compares if two doubles are equal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & number one \\
+\hline
+{\em y} & number two \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_aa9cdbbabfba520e603cc4c732eb0fb07}\label{namespace_utilities_aa9cdbbabfba520e603cc4c732eb0fb07}} 
+\index{Utilities@{Utilities}!countDots@{countDots}}
+\index{countDots@{countDots}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{countDots()}{countDots()}}
+{\footnotesize\ttfamily size\+\_\+t Utilities\+::count\+Dots (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+counts dot in a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to count from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a41ef81545baab900b3872fa1446fa6b0}\label{namespace_utilities_a41ef81545baab900b3872fa1446fa6b0}} 
+\index{Utilities@{Utilities}!extractBy@{extractBy}}
+\index{extractBy@{extractBy}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{extractBy()}{extractBy()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Utilities\+::extract\+By (\begin{DoxyParamCaption}\item[{const string \&}]{str,  }\item[{char}]{symbol }\end{DoxyParamCaption})}
+
+
+
+extract strings from a string by a given symbol 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to extract from \\
+\hline
+{\em symbol} & symbol to separety by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$string$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a4aea1594cf5ee68202c3244368d9d334}\label{namespace_utilities_a4aea1594cf5ee68202c3244368d9d334}} 
+\index{Utilities@{Utilities}!getArguments@{getArguments}}
+\index{getArguments@{getArguments}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{getArguments()}{getArguments()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Utilities\+::get\+Arguments (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+extract arguments from a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to extract from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$size\+\_\+t$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a6138839af2f1383f68d8ed67a588f361}\label{namespace_utilities_a6138839af2f1383f68d8ed67a588f361}} 
+\index{Utilities@{Utilities}!getCellCoordinates@{getCellCoordinates}}
+\index{getCellCoordinates@{getCellCoordinates}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{getCellCoordinates()}{getCellCoordinates()}}
+{\footnotesize\ttfamily vector$<$ size\+\_\+t $>$ Utilities\+::get\+Cell\+Coordinates (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+extract cell coordinates from a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to extract from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$size\+\_\+t$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a9a2780c962eb5a4bc49f291d2bf080e0}\label{namespace_utilities_a9a2780c962eb5a4bc49f291d2bf080e0}} 
+\index{Utilities@{Utilities}!getOperation@{getOperation}}
+\index{getOperation@{getOperation}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{getOperation()}{getOperation()}}
+{\footnotesize\ttfamily string Utilities\+::get\+Operation (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+get operation from a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to get from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_aacfdbd5d78b8cf836a1f6e73d8497340}\label{namespace_utilities_aacfdbd5d78b8cf836a1f6e73d8497340}} 
+\index{Utilities@{Utilities}!isCell@{isCell}}
+\index{isCell@{isCell}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{isCell()}{isCell()}}
+{\footnotesize\ttfamily bool Utilities\+::is\+Cell (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+checks if a string is a cell 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_aff80c479a64a3e10a5f5a3dba6332d28}\label{namespace_utilities_aff80c479a64a3e10a5f5a3dba6332d28}} 
+\index{Utilities@{Utilities}!isCharOperation@{isCharOperation}}
+\index{isCharOperation@{isCharOperation}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{isCharOperation()}{isCharOperation()}}
+{\footnotesize\ttfamily bool Utilities\+::is\+Char\+Operation (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+checks if a character is an operation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & character to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_adca54207e48a706ae1d22d552ef6905f}\label{namespace_utilities_adca54207e48a706ae1d22d552ef6905f}} 
+\index{Utilities@{Utilities}!isStringSpacesOnly@{isStringSpacesOnly}}
+\index{isStringSpacesOnly@{isStringSpacesOnly}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{isStringSpacesOnly()}{isStringSpacesOnly()}}
+{\footnotesize\ttfamily bool Utilities\+::is\+String\+Spaces\+Only (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+checks if a string contains only spaces 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a8d5d6ce342c012be576aa78971a4241c}\label{namespace_utilities_a8d5d6ce342c012be576aa78971a4241c}} 
+\index{Utilities@{Utilities}!reduceSpaces@{reduceSpaces}}
+\index{reduceSpaces@{reduceSpaces}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{reduceSpaces()}{reduceSpaces()}}
+{\footnotesize\ttfamily void Utilities\+::reduce\+Spaces (\begin{DoxyParamCaption}\item[{string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+reduce spaces of a string to one 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to remove spaces \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_utilities_a80d9fd3d9296843daa26c3fa4a97e1df}\label{namespace_utilities_a80d9fd3d9296843daa26c3fa4a97e1df}} 
+\index{Utilities@{Utilities}!removeQuoatations@{removeQuoatations}}
+\index{removeQuoatations@{removeQuoatations}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{removeQuoatations()}{removeQuoatations()}}
+{\footnotesize\ttfamily string Utilities\+::remove\+Quoatations (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+get copy of a string but without quoatations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a3608303cff6f358f16d937ad81d5a420}\label{namespace_utilities_a3608303cff6f358f16d937ad81d5a420}} 
+\index{Utilities@{Utilities}!removeSlash@{removeSlash}}
+\index{removeSlash@{removeSlash}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{removeSlash()}{removeSlash()}}
+{\footnotesize\ttfamily string Utilities\+::remove\+Slash (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+get copy from a string but without slash 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to remove from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_utilities_a570f6f9ccc39e073720611a8d719dded}\label{namespace_utilities_a570f6f9ccc39e073720611a8d719dded}} 
+\index{Utilities@{Utilities}!removeSpaces@{removeSpaces}}
+\index{removeSpaces@{removeSpaces}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{removeSpaces()}{removeSpaces()}}
+{\footnotesize\ttfamily void Utilities\+::remove\+Spaces (\begin{DoxyParamCaption}\item[{string \&}]{string }\end{DoxyParamCaption})}
+
+
+
+remove all spaces of a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & string to remove spaces \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_utilities_a711292517b75e7113c6dd1fca39757b4}\label{namespace_utilities_a711292517b75e7113c6dd1fca39757b4}} 
+\index{Utilities@{Utilities}!removeSpacesBack@{removeSpacesBack}}
+\index{removeSpacesBack@{removeSpacesBack}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{removeSpacesBack()}{removeSpacesBack()}}
+{\footnotesize\ttfamily void Utilities\+::remove\+Spaces\+Back (\begin{DoxyParamCaption}\item[{string \&}]{string }\end{DoxyParamCaption})}
+
+
+
+remove spaces after the last symbol of a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & string to remove spaces \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_utilities_a659aed2650e0a3d20b921d0059adaecb}\label{namespace_utilities_a659aed2650e0a3d20b921d0059adaecb}} 
+\index{Utilities@{Utilities}!removeSpacesFront@{removeSpacesFront}}
+\index{removeSpacesFront@{removeSpacesFront}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{removeSpacesFront()}{removeSpacesFront()}}
+{\footnotesize\ttfamily void Utilities\+::remove\+Spaces\+Front (\begin{DoxyParamCaption}\item[{string \&}]{string }\end{DoxyParamCaption})}
+
+
+
+remove spaces before the first symbol of a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & string to remove spaces \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_utilities_a8519adc7eeeed61c8186b5b27a46b967}\label{namespace_utilities_a8519adc7eeeed61c8186b5b27a46b967}} 
+\index{Utilities@{Utilities}!removeSpacesIn@{removeSpacesIn}}
+\index{removeSpacesIn@{removeSpacesIn}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{removeSpacesIn()}{removeSpacesIn()}}
+{\footnotesize\ttfamily void Utilities\+::remove\+Spaces\+In (\begin{DoxyParamCaption}\item[{string \&}]{string }\end{DoxyParamCaption})}
+
+
+
+remove spaces in a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & string to remove spaces \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_utilities_ab29d73d49363b7aa0cc2f50a49976cde}\label{namespace_utilities_ab29d73d49363b7aa0cc2f50a49976cde}} 
+\index{Utilities@{Utilities}!removeZeroesDouble@{removeZeroesDouble}}
+\index{removeZeroesDouble@{removeZeroesDouble}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{removeZeroesDouble()}{removeZeroesDouble()}}
+{\footnotesize\ttfamily void Utilities\+::remove\+Zeroes\+Double (\begin{DoxyParamCaption}\item[{string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+removes all trailing zeroes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to remove trailing zeroes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_utilities_a7823780204cdad4eb0cd0063f6164b68}\label{namespace_utilities_a7823780204cdad4eb0cd0063f6164b68}} 
+\index{Utilities@{Utilities}!toUpper@{toUpper}}
+\index{toUpper@{toUpper}!Utilities@{Utilities}}
+\doxysubsubsection{\texorpdfstring{toUpper()}{toUpper()}}
+{\footnotesize\ttfamily string Utilities\+::to\+Upper (\begin{DoxyParamCaption}\item[{const string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+returns a copy of a string but with all caps 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string from which to get all caps copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}

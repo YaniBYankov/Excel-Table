@@ -1,0 +1,431 @@
+\hypertarget{class_int_cell}{}\doxysection{Int\+Cell Class Reference}
+\label{class_int_cell}\index{IntCell@{IntCell}}
+
+
+Int\+Cell-\/ class that inherits publicly \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} and represents a cell containing an integer value.  
+
+
+
+
+{\ttfamily \#include $<$Int\+Cell.\+hpp$>$}
+
+Inheritance diagram for Int\+Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_int_cell}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_int_cell_ae235c8d2bd95ade2b4262207df0f96e1}{Int\+Cell}} (const string \&number)
+\begin{DoxyCompactList}\small\item\em Constructor the sets the value of the cell. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_int_cell_a126876075d5140bc521ce9b66c0d091b}{Int\+Cell}} (const \mbox{\hyperlink{class_int_cell}{Int\+Cell}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_int_cell}{Int\+Cell}} \& \mbox{\hyperlink{class_int_cell_a798da7258996f95907e0505135236132}{operator=}} (const \mbox{\hyperlink{class_int_cell}{Int\+Cell}} \&other)
+\begin{DoxyCompactList}\small\item\em operator = \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_int_cell_aa4a65c5a37db381c82d34e837bbb8cfb}\label{class_int_cell_aa4a65c5a37db381c82d34e837bbb8cfb}} 
+virtual {\bfseries $\sim$\+Int\+Cell} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} $\ast$ \mbox{\hyperlink{class_int_cell_a907140fe04f8a8176a8078ddb4b99f4a}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Method that clones the cell. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_int_cell_a533c239a2b3f5876ab4f6800afe52766}{convert\+To\+String}} () const override
+\begin{DoxyCompactList}\small\item\em function that converts the value of a cell into a string \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_int_cell_a0c98e168292a02a0f188aa43b8204b09}{convert\+To\+Double}} () const override
+\begin{DoxyCompactList}\small\item\em function that converts the value of a cell into double \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_int_cell_ace220a550468498b0e4f41d6dacd9942}{operator+}} (const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&other) const override
+\begin{DoxyCompactList}\small\item\em operator + that calculates the values of two cells and adds them \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_int_cell_a53c7beef20864bb04659bdfccadc3e71}{operator-\/}} (const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&other) const override
+\begin{DoxyCompactList}\small\item\em operator -\/ that calculates the values of two cells and subtract them \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_int_cell_a5f60f763a17a4aabaf33b0da1708b995}{operator$\ast$}} (const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&other) const override
+\begin{DoxyCompactList}\small\item\em operator $\ast$ that calculates the values of two cells and multiplies them \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_int_cell_afc6880c81ec660b6666c4d121180be33}{operator/}} (const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&other) const override
+\begin{DoxyCompactList}\small\item\em operator / that calculates the values of two cells and devides them \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_int_cell_ac82690f5f64cceff2a011b5ffcfb80e1}{operator==}} (const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&other) const override
+\begin{DoxyCompactList}\small\item\em operator == that calculates the values of two cells and checks if they are equal \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_int_cell_a43ab416e2de25653ea152a49194a94e1}{operator!=}} (const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&other) const override
+\begin{DoxyCompactList}\small\item\em operator != that calculates the values of two cells and checks if they are different \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_int_cell_a34ef6234f490c8f43c3d4254de7bbe78}{operator$<$}} (const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&other) const override
+\begin{DoxyCompactList}\small\item\em operator that calculates the values of two cells and checks if the first is less \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_int_cell_a904be5bba1124283c1eb4bf9bae90b43}{operator$<$=}} (const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&other) const override
+\begin{DoxyCompactList}\small\item\em operator that calculates the values of two cells and checks if the first is less or equal \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_int_cell_a7fdf012b35e80827778481380986078b}{operator$>$}} (const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&other) const override
+\begin{DoxyCompactList}\small\item\em operator that calculates the values of two cells and checks if the first is greater \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_int_cell_a442b507e9234aa1ce2892153952ebec8}{operator$>$=}} (const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&other) const override
+\begin{DoxyCompactList}\small\item\em operator that calculates the values of two cells and checks if the first is greater or equal \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_int_cell_ae5c455efee4a00e9038a59db80f80b7c}{print}} (ostream \&out, bool for\+File) const override
+\begin{DoxyCompactList}\small\item\em virtual method that prints the value of a cell after it has been calculated \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_int_cell_a22dc6ed60d9763a2d20b9cd544417de3}{get\+Size}} () const override
+\begin{DoxyCompactList}\small\item\em virtual method that gets the length of the string containing the cell value \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Int\+Cell-\/ class that inherits publicly \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} and represents a cell containing an integer value. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_int_cell_ae235c8d2bd95ade2b4262207df0f96e1}\label{class_int_cell_ae235c8d2bd95ade2b4262207df0f96e1}} 
+\index{IntCell@{IntCell}!IntCell@{IntCell}}
+\index{IntCell@{IntCell}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{IntCell()}{IntCell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Int\+Cell\+::\+Int\+Cell (\begin{DoxyParamCaption}\item[{const string \&}]{number }\end{DoxyParamCaption})}
+
+
+
+Constructor the sets the value of the cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & string that contains the integer to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_int_cell_a126876075d5140bc521ce9b66c0d091b}\label{class_int_cell_a126876075d5140bc521ce9b66c0d091b}} 
+\index{IntCell@{IntCell}!IntCell@{IntCell}}
+\index{IntCell@{IntCell}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{IntCell()}{IntCell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Int\+Cell\+::\+Int\+Cell (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_int_cell}{Int\+Cell}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & another \mbox{\hyperlink{class_int_cell}{Int\+Cell}} to copy from \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_int_cell_a907140fe04f8a8176a8078ddb4b99f4a}\label{class_int_cell_a907140fe04f8a8176a8078ddb4b99f4a}} 
+\index{IntCell@{IntCell}!clone@{clone}}
+\index{clone@{clone}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} $\ast$ Int\+Cell\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Method that clones the cell. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}}\& 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_a4cc88275c70255624a1fe42b72289366}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_a0c98e168292a02a0f188aa43b8204b09}\label{class_int_cell_a0c98e168292a02a0f188aa43b8204b09}} 
+\index{IntCell@{IntCell}!convertToDouble@{convertToDouble}}
+\index{convertToDouble@{convertToDouble}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{convertToDouble()}{convertToDouble()}}
+{\footnotesize\ttfamily double Int\+Cell\+::convert\+To\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+function that converts the value of a cell into double 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_a902b9b5e38f6eacd78c084bba0107a1e}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_a533c239a2b3f5876ab4f6800afe52766}\label{class_int_cell_a533c239a2b3f5876ab4f6800afe52766}} 
+\index{IntCell@{IntCell}!convertToString@{convertToString}}
+\index{convertToString@{convertToString}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{convertToString()}{convertToString()}}
+{\footnotesize\ttfamily string Int\+Cell\+::convert\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+function that converts the value of a cell into a string 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_a6ac2c06314c350a2ff5bd7de6af036b9}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_a22dc6ed60d9763a2d20b9cd544417de3}\label{class_int_cell_a22dc6ed60d9763a2d20b9cd544417de3}} 
+\index{IntCell@{IntCell}!getSize@{getSize}}
+\index{getSize@{getSize}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily size\+\_\+t Int\+Cell\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+virtual method that gets the length of the string containing the cell value 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_acf9cf9bd3765c22f2a59ed1314d5a280}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_a43ab416e2de25653ea152a49194a94e1}\label{class_int_cell_a43ab416e2de25653ea152a49194a94e1}} 
+\index{IntCell@{IntCell}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Int\+Cell\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+operator != that calculates the values of two cells and checks if they are different 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & cell to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_a93e749815e7c0de1be12ac9056ebb09e}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_a5f60f763a17a4aabaf33b0da1708b995}\label{class_int_cell_a5f60f763a17a4aabaf33b0da1708b995}} 
+\index{IntCell@{IntCell}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily double Int\+Cell\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+operator $\ast$ that calculates the values of two cells and multiplies them 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & cell to multiply with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_afa8c434e722e35bd71f61678396f3a8a}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_ace220a550468498b0e4f41d6dacd9942}\label{class_int_cell_ace220a550468498b0e4f41d6dacd9942}} 
+\index{IntCell@{IntCell}!operator+@{operator+}}
+\index{operator+@{operator+}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily double Int\+Cell\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+operator + that calculates the values of two cells and adds them 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & cell to add with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_a08d94f9987ad578cc70a72aa20011c42}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_a53c7beef20864bb04659bdfccadc3e71}\label{class_int_cell_a53c7beef20864bb04659bdfccadc3e71}} 
+\index{IntCell@{IntCell}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily double Int\+Cell\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+operator -\/ that calculates the values of two cells and subtract them 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & cell to subtract with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_ad4ab0a3050025e98788cb6d5b9defa20}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_afc6880c81ec660b6666c4d121180be33}\label{class_int_cell_afc6880c81ec660b6666c4d121180be33}} 
+\index{IntCell@{IntCell}!operator/@{operator/}}
+\index{operator/@{operator/}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily double Int\+Cell\+::operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+operator / that calculates the values of two cells and devides them 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & cell to devide with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_aa8b5dd10cb5c1d774a29eedda1c2744b}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_a34ef6234f490c8f43c3d4254de7bbe78}\label{class_int_cell_a34ef6234f490c8f43c3d4254de7bbe78}} 
+\index{IntCell@{IntCell}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Int\+Cell\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+operator that calculates the values of two cells and checks if the first is less 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & cell to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_ae1c21aa7084f20d309ed83a3bd89ee7e}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_a904be5bba1124283c1eb4bf9bae90b43}\label{class_int_cell_a904be5bba1124283c1eb4bf9bae90b43}} 
+\index{IntCell@{IntCell}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Int\+Cell\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+operator that calculates the values of two cells and checks if the first is less or equal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & cell to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_a0db2055b1b56bd0231ec1d39ed19e9fa}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_a798da7258996f95907e0505135236132}\label{class_int_cell_a798da7258996f95907e0505135236132}} 
+\index{IntCell@{IntCell}!operator=@{operator=}}
+\index{operator=@{operator=}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_int_cell}{Int\+Cell}} \& Int\+Cell\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_int_cell}{Int\+Cell}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+operator = 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & other \mbox{\hyperlink{class_int_cell}{Int\+Cell}} to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_int_cell}{Int\+Cell}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_int_cell_ac82690f5f64cceff2a011b5ffcfb80e1}\label{class_int_cell_ac82690f5f64cceff2a011b5ffcfb80e1}} 
+\index{IntCell@{IntCell}!operator==@{operator==}}
+\index{operator==@{operator==}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Int\+Cell\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+operator == that calculates the values of two cells and checks if they are equal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & cell to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_a9b5db987a39df3526f8cbff9cfadf609}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_a7fdf012b35e80827778481380986078b}\label{class_int_cell_a7fdf012b35e80827778481380986078b}} 
+\index{IntCell@{IntCell}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Int\+Cell\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+operator that calculates the values of two cells and checks if the first is greater 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & cell to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_a1428836d29d4f0a159e549af575a61b8}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_a442b507e9234aa1ce2892153952ebec8}\label{class_int_cell_a442b507e9234aa1ce2892153952ebec8}} 
+\index{IntCell@{IntCell}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Int\+Cell\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+operator that calculates the values of two cells and checks if the first is greater or equal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & cell to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_a1e07fbf788d5fb2b7a673746695d7189}{Cell\+Abstraction}}.
+
+\mbox{\Hypertarget{class_int_cell_ae5c455efee4a00e9038a59db80f80b7c}\label{class_int_cell_ae5c455efee4a00e9038a59db80f80b7c}} 
+\index{IntCell@{IntCell}!print@{print}}
+\index{print@{print}!IntCell@{IntCell}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Int\+Cell\+::print (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{bool}]{for\+File }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+virtual method that prints the value of a cell after it has been calculated 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & ostream \\
+\hline
+{\em for\+File} & print it to a file or just cout \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_cell_abstraction_ae004bc27c0d2ca37c093fb01ded9042d}{Cell\+Abstraction}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Int\+Cell.\+hpp\item 
+Int\+Cell.\+cpp\end{DoxyCompactItemize}

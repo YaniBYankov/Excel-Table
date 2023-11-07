@@ -1,0 +1,35 @@
+\hypertarget{_table_8hpp_source}{}\doxysection{Table.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef Table\_hpp}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define Table\_hpp}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Cell.hpp"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_cell}{Cell}};}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_table}{Table}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_table_a049f2e06391781ae255c6698869c4ad1}{Table}}();}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_table_aa44898f5dfc47c0ea3cfce0896e555b1}{addCell}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell}{Cell}}\& cell,\textcolor{keywordtype}{size\_t} row,\textcolor{keywordtype}{size\_t} col);}
+\DoxyCodeLine{30     \textcolor{keyword}{const} \mbox{\hyperlink{class_cell}{Cell}}\& \mbox{\hyperlink{class_table_a3b650a8cc49d1903c4ad914bc0d3bc12}{getCell}}(\textcolor{keywordtype}{size\_t} row,\textcolor{keywordtype}{size\_t} col) \textcolor{keyword}{const};}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_table_aa0a0926c7c899abf768bd4d1b187d401}{print}}(ostream\& out,\textcolor{keywordtype}{bool} forFile) \textcolor{keyword}{const};}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_table_a4c75e29648aa2eec12c8275739a49b81}{edit}}(\textcolor{keywordtype}{size\_t} row,\textcolor{keywordtype}{size\_t} col,\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& value);}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_table_a92ce3dba95a8dcf634ef57b1081b8647}{clear}}();}
+\DoxyCodeLine{52     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_table_a6331ce5838e7fcec33e33b87f21410cb}{isEmpty}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{59     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_table_af5cb966218ce6697b4e9ab769357426f}{isOutOfTable}}(\textcolor{keywordtype}{size\_t} r,\textcolor{keywordtype}{size\_t} c) \textcolor{keyword}{const};}
+\DoxyCodeLine{60 \textcolor{keyword}{private}:}
+\DoxyCodeLine{64     vector<vector<Cell>> cells;}
+\DoxyCodeLine{68     \textcolor{keywordtype}{size\_t} rows;}
+\DoxyCodeLine{72     \textcolor{keywordtype}{size\_t} cols;}
+\DoxyCodeLine{78     \textcolor{keywordtype}{size\_t} getColWidth(\textcolor{keywordtype}{size\_t} col) \textcolor{keyword}{const};}
+\DoxyCodeLine{86     \textcolor{keywordtype}{void} printCell(\textcolor{keywordtype}{size\_t} row,\textcolor{keywordtype}{size\_t} col,ostream\& out,\textcolor{keywordtype}{bool} forFile) \textcolor{keyword}{const};}
+\DoxyCodeLine{92     \textcolor{keywordtype}{void} resizeTable(\textcolor{keywordtype}{size\_t} r,\textcolor{keywordtype}{size\_t} c);}
+\DoxyCodeLine{97     \textcolor{keywordtype}{void} resizeRows(\textcolor{keywordtype}{size\_t} r);}
+\DoxyCodeLine{102     \textcolor{keywordtype}{void} resizeCols(\textcolor{keywordtype}{size\_t} c);}
+\DoxyCodeLine{103     }
+\DoxyCodeLine{104 \};}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* Table\_hpp */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

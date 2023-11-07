@@ -1,0 +1,20 @@
+//
+//  TableWriter.cpp
+//  Project
+//
+//  Created by Yani Yankov on 14.06.23.
+//
+
+#include "TableWriter.hpp"
+
+void TableWriter::writeTable(const Table &table, const string &fileName)
+{
+    ofstream write(fileName);
+    if(!write.is_open())
+    {
+        write.close();
+        throw invalid_argument("Couldn't open file to write!");
+    }
+    
+    table.print(write, true);
+}

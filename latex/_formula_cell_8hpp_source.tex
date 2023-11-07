@@ -1,0 +1,42 @@
+\hypertarget{_formula_cell_8hpp_source}{}\doxysection{Formula\+Cell.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef FormulaCell\_hpp}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define FormulaCell\_hpp}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}CellAbstraction.hpp"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Table.hpp"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_table}{Table}};}
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_formula_cell}{FormulaCell}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_formula_cell_a10359535fd110fcb18e5d687052cc486}{FormulaCell}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& formula,\textcolor{keyword}{const} \mbox{\hyperlink{class_table}{Table}}\& table);}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_formula_cell_a10359535fd110fcb18e5d687052cc486}{FormulaCell}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_formula_cell}{FormulaCell}}\& other);}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_formula_cell}{FormulaCell}}\& \mbox{\hyperlink{class_formula_cell_a031c4aac07e783a615921f777feba49e}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_formula_cell}{FormulaCell}}\& other);}
+\DoxyCodeLine{34     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_formula_cell_aef64b74bb2fbeaaf48da2ca038d47da1}{\string~FormulaCell}}();}
+\DoxyCodeLine{35     }
+\DoxyCodeLine{40     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}* \mbox{\hyperlink{class_formula_cell_aef9d60160b5e6dda1791c2481a6bfe59}{clone}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{45     \textcolor{keyword}{virtual} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_formula_cell_a3005b56d6c782ce789e6d9204c7e2bee}{convertToString}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{50     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_formula_cell_a89117bcdb26b3c4326c8ca8a52954228}{convertToDouble}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{56     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_formula_cell_aabc403a52a6684fae00b2b6be2185558}{operator+}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{62     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_formula_cell_a101d39e57f1e5f545a1b28cbcd39b6e0}{operator-\/}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{68     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_formula_cell_a016e4149e562a9ab0834d302ff15c890}{operator*}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{74     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_formula_cell_ac3a810453572beed4d7becda02345ae2}{operator/}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override}; }
+\DoxyCodeLine{80     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_formula_cell_a14a5b7d261be699f46e6f8001e3f39ed}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{86     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_formula_cell_a88ddbe11b3f4f11ddb52fbfc27e15c29}{operator!=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{92     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_formula_cell_ae690a454ef0bc264e7f0a5f671f6ab25}{operator<}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{98     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_formula_cell_a36561c9f5a2386b40257050bbfd21b64}{operator<=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{104     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_formula_cell_a3fa784bd03021aef540d6b0c485c9584}{operator>}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{110     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_formula_cell_acdfb49c2b6b8b6122a788d1a8e6a7ea2}{operator>=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{116     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_formula_cell_ae66e156fefeb7ec0ec37f9a755b8e8b2}{print}}(ostream\& out,\textcolor{keywordtype}{bool} forFile) \textcolor{keyword}{const override};}
+\DoxyCodeLine{121     \textcolor{keyword}{virtual} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_formula_cell_ae819ae97c1590cd1d7015b8adfec148c}{getSize}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{122 \textcolor{keyword}{private}:}
+\DoxyCodeLine{126     \textcolor{keywordtype}{string} value;}
+\DoxyCodeLine{130     \textcolor{keyword}{const} \mbox{\hyperlink{class_table}{Table}}\& table;}
+\DoxyCodeLine{135     \textcolor{keywordtype}{double} calculateFormula() \textcolor{keyword}{const};}
+\DoxyCodeLine{136 \};}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* FormulaCell\_hpp */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

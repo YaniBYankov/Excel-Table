@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/yaniyankov/Desktop/OOP/2023/Project/Project",
+      "program": "/Users/yaniyankov/Desktop/OOP/2023/Project/Project/build/Debug/outDebug"
+    }
+  ]
+}

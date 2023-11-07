@@ -1,0 +1,152 @@
+\hypertarget{class_table}{}\doxysection{Table Class Reference}
+\label{class_table}\index{Table@{Table}}
+
+
+Table-\/ class that represents a table with cells.  
+
+
+
+
+{\ttfamily \#include $<$Table.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_table_a049f2e06391781ae255c6698869c4ad1}\label{class_table_a049f2e06391781ae255c6698869c4ad1}} 
+{\bfseries Table} ()
+\begin{DoxyCompactList}\small\item\em default constructor that sets the rows and cols to zero \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_aa44898f5dfc47c0ea3cfce0896e555b1}{add\+Cell}} (const \mbox{\hyperlink{class_cell}{Cell}} \&cell, size\+\_\+t row, size\+\_\+t col)
+\begin{DoxyCompactList}\small\item\em Method that adds cell in the table and resizes the table if needed. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_cell}{Cell}} \& \mbox{\hyperlink{class_table_a3b650a8cc49d1903c4ad914bc0d3bc12}{get\+Cell}} (size\+\_\+t row, size\+\_\+t col) const
+\begin{DoxyCompactList}\small\item\em Method that returns a cell from the table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_aa0a0926c7c899abf768bd4d1b187d401}{print}} (ostream \&out, bool for\+File) const
+\begin{DoxyCompactList}\small\item\em Method that prints the value of the table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_table_a4c75e29648aa2eec12c8275739a49b81}{edit}} (size\+\_\+t row, size\+\_\+t col, const string \&value)
+\begin{DoxyCompactList}\small\item\em Method that checks if the position and the value of the cell is valid and then edits that cell in the table. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_table_a92ce3dba95a8dcf634ef57b1081b8647}\label{class_table_a92ce3dba95a8dcf634ef57b1081b8647}} 
+void {\bfseries clear} ()
+\begin{DoxyCompactList}\small\item\em Method that clears the table and sets rows and cols to zero. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_table_a6331ce5838e7fcec33e33b87f21410cb}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Method that checks if the table is empty. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_table_af5cb966218ce6697b4e9ab769357426f}{is\+Out\+Of\+Table}} (size\+\_\+t r, size\+\_\+t c) const
+\begin{DoxyCompactList}\small\item\em Method that checks if a given cell coordinates is out of the table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Table-\/ class that represents a table with cells. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_table_aa44898f5dfc47c0ea3cfce0896e555b1}\label{class_table_aa44898f5dfc47c0ea3cfce0896e555b1}} 
+\index{Table@{Table}!addCell@{addCell}}
+\index{addCell@{addCell}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{addCell()}{addCell()}}
+{\footnotesize\ttfamily void Table\+::add\+Cell (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell}{Cell}} \&}]{cell,  }\item[{size\+\_\+t}]{row,  }\item[{size\+\_\+t}]{col }\end{DoxyParamCaption})}
+
+
+
+Method that adds cell in the table and resizes the table if needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & cell to add \\
+\hline
+{\em row} & row of the cell to add \\
+\hline
+{\em col} & col of the cell to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_table_a4c75e29648aa2eec12c8275739a49b81}\label{class_table_a4c75e29648aa2eec12c8275739a49b81}} 
+\index{Table@{Table}!edit@{edit}}
+\index{edit@{edit}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily void Table\+::edit (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row,  }\item[{size\+\_\+t}]{col,  }\item[{const string \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Method that checks if the position and the value of the cell is valid and then edits that cell in the table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & row of the cell to edit \\
+\hline
+{\em col} & col of the cell to edit \\
+\hline
+{\em value} & string with the value to edit \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_table_a3b650a8cc49d1903c4ad914bc0d3bc12}\label{class_table_a3b650a8cc49d1903c4ad914bc0d3bc12}} 
+\index{Table@{Table}!getCell@{getCell}}
+\index{getCell@{getCell}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getCell()}{getCell()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_cell}{Cell}} \& Table\+::get\+Cell (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row,  }\item[{size\+\_\+t}]{col }\end{DoxyParamCaption}) const}
+
+
+
+Method that returns a cell from the table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & row of the cell \\
+\hline
+{\em col} & col of the cell \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{class_cell}{Cell}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_table_a6331ce5838e7fcec33e33b87f21410cb}\label{class_table_a6331ce5838e7fcec33e33b87f21410cb}} 
+\index{Table@{Table}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Table\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method that checks if the table is empty. 
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_table_af5cb966218ce6697b4e9ab769357426f}\label{class_table_af5cb966218ce6697b4e9ab769357426f}} 
+\index{Table@{Table}!isOutOfTable@{isOutOfTable}}
+\index{isOutOfTable@{isOutOfTable}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{isOutOfTable()}{isOutOfTable()}}
+{\footnotesize\ttfamily bool Table\+::is\+Out\+Of\+Table (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{r,  }\item[{size\+\_\+t}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Method that checks if a given cell coordinates is out of the table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & row \\
+\hline
+{\em c} & col \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_table_aa0a0926c7c899abf768bd4d1b187d401}\label{class_table_aa0a0926c7c899abf768bd4d1b187d401}} 
+\index{Table@{Table}!print@{print}}
+\index{print@{print}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Table\+::print (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{bool}]{for\+File }\end{DoxyParamCaption}) const}
+
+
+
+Method that prints the value of the table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & ostream to print to. It can be cout or ofstream \\
+\hline
+{\em for\+File} & boolean that tells if the printing is to a file \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Table.\+hpp\item 
+Table.\+cpp\end{DoxyCompactItemize}

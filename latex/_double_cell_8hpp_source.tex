@@ -1,0 +1,38 @@
+\hypertarget{_double_cell_8hpp_source}{}\doxysection{Double\+Cell.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef DoubleCell\_hpp}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define DoubleCell\_hpp}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}CellAbstraction.hpp"{}}}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_double_cell}{DoubleCell}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_double_cell_a8e237931507ca4c7c8adc4035f61e695}{DoubleCell}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& number);}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_double_cell_a8e237931507ca4c7c8adc4035f61e695}{DoubleCell}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_double_cell}{DoubleCell}}\& other);}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_double_cell}{DoubleCell}}\& \mbox{\hyperlink{class_double_cell_afac8433d514f1bb3f05653c1876eb24f}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_double_cell}{DoubleCell}}\& other);}
+\DoxyCodeLine{30     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_double_cell_abd887292d03f8f24e204cfcea0548912}{\string~DoubleCell}}();}
+\DoxyCodeLine{31     }
+\DoxyCodeLine{36     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}* \mbox{\hyperlink{class_double_cell_aa1e0e9fdba580ddbdf2bf918acc3ab33}{clone}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{41     \textcolor{keyword}{virtual} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_double_cell_aea74be63f98b12593ce939b5cbcb226e}{convertToString}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{46     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_double_cell_a38fd86085fe066cd12f8722da674a376}{convertToDouble}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{52     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_double_cell_ab6bdf8385bac6bd85a76862f97a8a4ee}{operator+}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{58     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_double_cell_acdc0dbe23d011923a7324b27467d2875}{operator-\/}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{64     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_double_cell_aea2bd2f45cbbd74d5109edb208e636e1}{operator*}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{70     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_double_cell_a58405a2f5ed9b209713da88412c84010}{operator/}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{76     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_double_cell_a7876cb2a387678f96883b687d16174b2}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{82     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_double_cell_abbf5a59ebb78b3a8e5ab131c88cbdde0}{operator!=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{88     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_double_cell_a37af41e4417ff5bb578bc40c19ffb329}{operator<}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{94     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_double_cell_a3b63af748f7d4b0068d18815021d648b}{operator<=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{100     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_double_cell_a4a620b6bab873cb37fb09854c902520f}{operator>}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{106     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_double_cell_ab5a7411c0fd66e415635cf07099ac8ff}{operator>=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cell_abstraction}{CellAbstraction}}\& other) \textcolor{keyword}{const override};}
+\DoxyCodeLine{112     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_double_cell_a615d20b0c6948be07ae003df999cca05}{print}}(ostream\& out,\textcolor{keywordtype}{bool} forFile) \textcolor{keyword}{const override};}
+\DoxyCodeLine{117     \textcolor{keyword}{virtual} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_double_cell_a6c77f8d74b5d2cf2b079c81733749570}{getSize}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{118 \textcolor{keyword}{private}:}
+\DoxyCodeLine{122     \textcolor{keywordtype}{double} value;}
+\DoxyCodeLine{123     }
+\DoxyCodeLine{124 \};}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* DoubleCell\_hpp */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

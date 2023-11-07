@@ -1,0 +1,196 @@
+\hypertarget{class_cell}{}\doxysection{Cell Class Reference}
+\label{class_cell}\index{Cell@{Cell}}
+
+
+Cell-\/ class that represents a cell containing a pointer to a \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} that holds the value of the cell.  
+
+
+
+
+{\ttfamily \#include $<$Cell.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cell_a394510643e8664cf12b5efaf5cb99f71}\label{class_cell_a394510643e8664cf12b5efaf5cb99f71}} 
+{\bfseries Cell} ()
+\begin{DoxyCompactList}\small\item\em Default constructor that sets the value pointer to nullptr. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_af0d4f169f1bf35a3f9aacb84c042a449}{Cell}} (const string \&value, const \mbox{\hyperlink{class_table}{Table}} \&table)
+\begin{DoxyCompactList}\small\item\em Constructor that sets the value of a cell with a given string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_a5f7e1f953c71c7421726dc6af263e467}{Cell}} (const \mbox{\hyperlink{class_cell}{Cell}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell}{Cell}} \& \mbox{\hyperlink{class_cell_ac1c53fcae0c0be453d0312310ed80fc9}{operator=}} (const \mbox{\hyperlink{class_cell}{Cell}} \&other)
+\begin{DoxyCompactList}\small\item\em operator = \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} $\ast$ \mbox{\hyperlink{class_cell_ab4aad05f2a6585fe73ce5edcc5e9456e}{get\+Cell}} () const
+\begin{DoxyCompactList}\small\item\em Method that returns the value of the cell (getter) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a9fa559f7a28e2b4336c6879ca09304d8}\label{class_cell_a9fa559f7a28e2b4336c6879ca09304d8}} 
+{\bfseries $\sim$\+Cell} ()
+\begin{DoxyCompactList}\small\item\em Destructor that deletes the value of a cell. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_cell_a8eb052c045202724a339688298b531b2}{get\+Value\+Double}} () const
+\begin{DoxyCompactList}\small\item\em Method that gets the value of the cell in double number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a84e12772526080cb8bebad40413ecae1}{print}} (ostream \&out, bool for\+File) const
+\begin{DoxyCompactList}\small\item\em Method that prints the value of the cell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a0e9cef0ca3767005544ef0370c2e3855}{edit\+Cell}} (const string \&value, const \mbox{\hyperlink{class_table}{Table}} \&table)
+\begin{DoxyCompactList}\small\item\em Methot that checks if the given value is valid \mbox{\hyperlink{class_cell}{Cell}} value and then edits the cell by changing its value to the new one. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_cell_af858921c5dc569c4a2da9ea80ba4a90f}{size}} () const
+\begin{DoxyCompactList}\small\item\em Methot that checks if the cell has a value and then calls ($<$\+Cell\+Abstraction$>$\char`\"{}\+::\char`\"{})n$<$get\+Size$>$ that returns the length of the string containing the cell value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_a0dddac6962cf3778e13a9b2ddcf73b5c}{check\+For\+Self\+Argument}} (const string \&cell, const \mbox{\hyperlink{class_table}{Table}} \&table) const
+\begin{DoxyCompactList}\small\item\em Methot that checks if the given \mbox{\hyperlink{class_cell}{Cell}} is an argument of a formula of another cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cell-\/ class that represents a cell containing a pointer to a \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} that holds the value of the cell. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cell_af0d4f169f1bf35a3f9aacb84c042a449}\label{class_cell_af0d4f169f1bf35a3f9aacb84c042a449}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{const string \&}]{value,  }\item[{const \mbox{\hyperlink{class_table}{Table}} \&}]{table }\end{DoxyParamCaption})}
+
+
+
+Constructor that sets the value of a cell with a given string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value to set \\
+\hline
+{\em table} & it is used for cells from \mbox{\hyperlink{class_formula_cell}{Formula\+Cell}} that contains a refrence to a table \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_a5f7e1f953c71c7421726dc6af263e467}\label{class_cell_a5f7e1f953c71c7421726dc6af263e467}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell}{Cell}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & other cell to copy from \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cell_a0dddac6962cf3778e13a9b2ddcf73b5c}\label{class_cell_a0dddac6962cf3778e13a9b2ddcf73b5c}} 
+\index{Cell@{Cell}!checkForSelfArgument@{checkForSelfArgument}}
+\index{checkForSelfArgument@{checkForSelfArgument}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{checkForSelfArgument()}{checkForSelfArgument()}}
+{\footnotesize\ttfamily bool Cell\+::check\+For\+Self\+Argument (\begin{DoxyParamCaption}\item[{const string \&}]{cell,  }\item[{const \mbox{\hyperlink{class_table}{Table}} \&}]{table }\end{DoxyParamCaption}) const}
+
+
+
+Methot that checks if the given \mbox{\hyperlink{class_cell}{Cell}} is an argument of a formula of another cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & \mbox{\hyperlink{class_cell}{Cell}} argument to check \\
+\hline
+{\em table} & table in which to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_a0e9cef0ca3767005544ef0370c2e3855}\label{class_cell_a0e9cef0ca3767005544ef0370c2e3855}} 
+\index{Cell@{Cell}!editCell@{editCell}}
+\index{editCell@{editCell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{editCell()}{editCell()}}
+{\footnotesize\ttfamily void Cell\+::edit\+Cell (\begin{DoxyParamCaption}\item[{const string \&}]{value,  }\item[{const \mbox{\hyperlink{class_table}{Table}} \&}]{table }\end{DoxyParamCaption})}
+
+
+
+Methot that checks if the given value is valid \mbox{\hyperlink{class_cell}{Cell}} value and then edits the cell by changing its value to the new one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & new value \\
+\hline
+{\em table} & it is used for cells from \mbox{\hyperlink{class_formula_cell}{Formula\+Cell}} that contains a refrence to a table \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_ab4aad05f2a6585fe73ce5edcc5e9456e}\label{class_cell_ab4aad05f2a6585fe73ce5edcc5e9456e}} 
+\index{Cell@{Cell}!getCell@{getCell}}
+\index{getCell@{getCell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getCell()}{getCell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell_abstraction}{Cell\+Abstraction}} $\ast$ Cell\+::get\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method that returns the value of the cell (getter) 
+
+\begin{DoxyReturn}{Returns}
+Cell\+Abstraction$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_a8eb052c045202724a339688298b531b2}\label{class_cell_a8eb052c045202724a339688298b531b2}} 
+\index{Cell@{Cell}!getValueDouble@{getValueDouble}}
+\index{getValueDouble@{getValueDouble}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getValueDouble()}{getValueDouble()}}
+{\footnotesize\ttfamily double Cell\+::get\+Value\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method that gets the value of the cell in double number. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_ac1c53fcae0c0be453d0312310ed80fc9}\label{class_cell_ac1c53fcae0c0be453d0312310ed80fc9}} 
+\index{Cell@{Cell}!operator=@{operator=}}
+\index{operator=@{operator=}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} \& Cell\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell}{Cell}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+operator = 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & other cell to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_cell}{Cell}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_a84e12772526080cb8bebad40413ecae1}\label{class_cell_a84e12772526080cb8bebad40413ecae1}} 
+\index{Cell@{Cell}!print@{print}}
+\index{print@{print}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Cell\+::print (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{bool}]{for\+File }\end{DoxyParamCaption}) const}
+
+
+
+Method that prints the value of the cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & ostream to print to. It can be cout or ofstream \\
+\hline
+{\em for\+File} & boolean that tells if the printing is to a file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_af858921c5dc569c4a2da9ea80ba4a90f}\label{class_cell_af858921c5dc569c4a2da9ea80ba4a90f}} 
+\index{Cell@{Cell}!size@{size}}
+\index{size@{size}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t Cell\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Methot that checks if the cell has a value and then calls ($<$\+Cell\+Abstraction$>$\char`\"{}\+::\char`\"{})n$<$get\+Size$>$ that returns the length of the string containing the cell value. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Cell.\+hpp\item 
+Cell.\+cpp\end{DoxyCompactItemize}
